@@ -10,6 +10,7 @@
 .site-header {
   grid-area: header;
 
+  // Site logo
   .site-title {
     text-transform: uppercase;
     font-weight: 800;
@@ -32,6 +33,7 @@
     }
   }
 
+  // Side logo on pages where it's smaller
   p.site-title {
     a {
       .site-title__name {
