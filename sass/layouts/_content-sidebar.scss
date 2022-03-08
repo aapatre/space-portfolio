@@ -10,6 +10,8 @@
 .site-header {
   grid-area: header;
 
+  box-shadow: 0 0 0.5rem #000000;
+
   // Site logo
   .site-title {
     text-transform: uppercase;
