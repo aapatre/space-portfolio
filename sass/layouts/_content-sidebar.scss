@@ -10,6 +10,7 @@
 .site-header {
   grid-area: header;
 
+  padding-left: 0.75rem;
   box-shadow: 0 0 0.5rem #000000;
 
   // Site logo
@@ -24,7 +25,7 @@
         color: #ffffff;
         background-color: #000000;
 
-        margin: 0.5rem 0.15rem 0.5rem 0.75rem;
+        margin: 0.5rem 0.15rem 0.5rem 0;
         padding: 0.1rem 0.7rem 0.3rem 0.7rem;
         border-radius: 1rem;
       }
@@ -39,7 +40,7 @@
   p.site-title {
     a {
       .site-title__name {
-        margin: 0.5rem 0.075rem 0.5rem 0.75rem;
+        margin: 0.5rem 0.075rem 0.5rem 0;
         padding: 0.1rem 0.35rem 0.15rem 0.35rem;
         border-radius: 0.5rem;
       }
