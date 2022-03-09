@@ -1,27 +1,77 @@
 .site {
-	display: grid;
-	grid-template-columns: auto ($size__site-sidebar);
-	grid-template-areas:
-		"header header"
-		"main sidebar"
-		"footer footer";
+  display: grid;
+  grid-template-columns: auto ($size__site-sidebar);
+  grid-template-areas:
+    "header header"
+    "main sidebar"
+    "footer footer";
 }
 
 .site-header {
-	grid-area: header;
+  grid-area: header;
+
+  padding-left: 0.75rem;
+  box-shadow: 0 0 0.5rem #000000;
+
+  display: flex;
+  align-items: baseline;
+
+  // Site logo
+  .site-title {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+
+    a {
+      text-decoration-line: none;
+
+      .site-title__name {
+        color: #ffffff;
+        background-color: #000000;
+
+        margin: 0.5rem 0.15rem 0.5rem 0;
+        padding: 0.1rem 0.7rem 0.3rem 0.7rem;
+        border-radius: 1rem;
+      }
+
+      .site-title__tld {
+        color: #000000;
+      }
+    }
+  }
+
+  // Site logo on pages where it's smaller
+  p.site-title {
+    padding-top: 0.3rem;
+    padding-bottom: 0.35rem;
+
+    a {
+      .site-title__name {
+        margin: 0.5rem 0.075rem 0.5rem 0;
+        padding: 0.1rem 0.35rem 0.2rem 0.35rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+
+  .site-description {
+    margin-top: -0.3rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .site-main {
-	grid-area: main;
-	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  grid-area: main;
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
 .widget-area {
-	grid-area: sidebar;
+  grid-area: sidebar;
 }
 
 .site-footer {
-	grid-area: footer;
+  grid-area: footer;
 }
 
 @import "no-sidebar";
