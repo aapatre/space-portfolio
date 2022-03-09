@@ -20,6 +20,8 @@
   .site-title {
     text-transform: uppercase;
     font-weight: 800;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
 
     a {
       text-decoration-line: none;
@@ -41,13 +43,21 @@
 
   // Site logo on pages where it's smaller
   p.site-title {
+    padding-top: 0.3rem;
+    padding-bottom: 0.35rem;
+
     a {
       .site-title__name {
         margin: 0.5rem 0.075rem 0.5rem 0;
-        padding: 0.1rem 0.35rem 0.15rem 0.35rem;
+        padding: 0.1rem 0.35rem 0.2rem 0.35rem;
         border-radius: 0.5rem;
       }
     }
+  }
+
+  .site-description {
+    margin-top: -0.3rem;
+    margin-bottom: 0.5rem;
   }
 }
 
