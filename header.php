@@ -47,7 +47,7 @@
 				<?php
 			endif;
 			$spaceportfolio_description = get_bloginfo( 'description', 'display' );
-			if ( ( $spaceportfolio_description || is_customize_preview() ) && ( is_front_page() && is_home() ) ) :
+			if ( ( $spaceportfolio_description || is_customize_preview() ) && ( is_front_page() && is_home() ) ) :  // Display site description only on home page && frontpage.
 				?>
 				<p class="site-description"><?php echo $spaceportfolio_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
