@@ -176,3 +176,19 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// CUSTOM FUNCTIONS.
+
+/**
+ * Get the TLD domain extension
+ */
+function spaceportfolio_get_tld_extension()
+{
+	if (!empty($_SERVER['SERVER_NAME'])) {
+		$domain = esc_url_raw(wp_unslash($_SERVER['SERVER_NAME']));
+		$tld =  trim(substr($domain, strrpos($domain, '.') + 1));
+
+		return $tld;
+	}
+
+	return null;
+}
